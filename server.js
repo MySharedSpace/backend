@@ -42,7 +42,7 @@ const urlencodedParser = bodyParser.urlencoded({ extended: false })
 const app= express()
 app.set("view engine",'ejs')
 app.use(cors({
-    origin:['http://localhost:5173','https://my-sharedspace.web.app'],
+    origin:['http://localhost:5173','https://my-sharedspace.web.app',"https://mine.cloudns.biz"],
     methods: ['POST', 'PUT', 'GET', 'OPTIONS', 'HEAD'],
     credentials: true
 }));
